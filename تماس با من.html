@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>   
+  <link  rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8" />
+    <title>JavaScript confirmation box</title>
+    <script>
+      
+      function confirmAction() {
+        let confirmAction = confirm("آیا از ارسال اطلاعات خود اطمینان دارید؟");
+        if (confirmAction) {
+          alert("انجام شد");
+        } else {
+          alert("کنسل شد");
+        }
+      }
+    </script>
+</head>
+<body>
+    <p>
+        <ul >
+          <li ><a href="tamrin7.html" > معرفی</a></li>
+          <li> <a href="توانایی ها.html"> مهارت ها و توانمندی ها</a> </li>
+          <li><a href="افتخارات.html"> افتخارات و دستاوردها </a></li>
+          <li> <a href="تماس با من.html"> تماس با من</a></li>
+        </ul>
+    </p>
+    <form method="post" action="get.php">
+        <label for="fname">نام و نام خانوادگی:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="email">ایمیل:</label>
+        <input type="text" id="email" name="email">
+     
+     <label for="massage">محتوای پیام:</label>
+     <input type="text" id="massage" name="massage">
+     
+    
+    <button onclick="confirmAction()">ارسال</button>
+        </form>
+        <footer>
+            morobot2003@gmail.com
+
+        </footer>
+    
+
+</body>
+
+
+
+
+
+</html>

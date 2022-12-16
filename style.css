@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+    font-size: 20pt;
+    color:black;
+    text-align: right;
+}
+
+ul{
+     list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+li{
+  font-size: medium;
+color: cornflowerblue;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+html{
+  dir="rtl" lang="fa-IR"
+}

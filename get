@@ -1,0 +1,17 @@
+<?php
+if(isset($_POST['name'])){
+$name = "Name:".$_POST['name']."
+";
+$email = "Email:".$_POST['email']."
+";
+$message = "Message:".$_POST['message']."
+";
+$fileCount = count (glob ('file*.txt'));
+$newName = 'file' . ( $fileCount + 1) . '.txt';
+$file=fopen($newName, "a");
+fwrite($file, $name);
+fwrite($file, $email);
+fwrite($file, $message);
+fclose($file);
+}
+?>
